@@ -2,6 +2,42 @@ body {
     margin: 0;
 }
 
+/* Header Texte */
+.blocheadertext {
+    margin: 2em 3em 0em 3em;
+}
+
+.headertext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.booki {
+    color: #0065FC;
+    font-size: 1.3em;
+}
+
+.headerlist li {
+    display: inline;
+    list-style-type: none;
+    font-size: 1.2em;
+    padding-top: 2.3em;
+    margin-right: 4em;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.headerlist li:hover {
+    color: #0065FC;
+    border-top: solid #0065FC;
+}
+
+.description p:nth-child(1) {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
 /* RECHERCHE */
 .search {
     display: flex;
@@ -94,12 +130,14 @@ span {
 
 main {
     padding: 1em 0em 0em 3.5em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.block {
+.blockheberger {
     background-color: #d9d9d9;
     border-radius: 15px 15px 15px 15px;
-    width: 80%;
+    width: 60%;
 }
 
 .titre h1 {
@@ -115,8 +153,8 @@ main {
 figure {
     display: flex;
     flex-flow: column;
-    width: 17em;
-    height: 15em;
+    width: 12em;
+    height: 10em;
     padding: 0.5em;
     border-radius: 15px 15px 15px 15px;
     background-color: white;
@@ -135,12 +173,16 @@ figure img:nth-child(6) {
     height: 10%;
 }
 
+figure:hover {
+    box-shadow: 0px 0px 0px 0px;
+}
+
 figcaption h1, p {
     font-family: 'raleway', sans-serif;
 }
 
 figcaption p:nth-child(1) {
-    font-size: 1.5em;
+    font-weight: bold;
 }
 
 figcaption p:nth-child(2) {
@@ -158,4 +200,15 @@ figcaption p:nth-child(2) {
 .plus p {
     padding: 0px 0px 20px 20px;
     font-weight: bold;
+}
+
+.plus p:hover {
+    color: #0065FC;
+}
+
+.blockpopulaire {
+    margin-left: 6em;
+    background-color: #d9d9d9;
+    border-radius: 15px 15px 15px 15px;
+    width: 30%;
 }
