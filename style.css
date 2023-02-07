@@ -75,7 +75,11 @@ button {
 }
 
 /* icone */
-.fa-money-bill-wave, .fa-child-reaching, .fa-heart, .fa-dog, .fa-info{
+.fa-money-bill-wave, 
+.fa-child-reaching, 
+.fa-heart, 
+.fa-dog, 
+.fa-info{
     color: rgb(12, 133, 231);
 }
 
@@ -91,6 +95,11 @@ button {
     background-color: rgb(12, 133, 231);
 }
 
+.nav h1 {
+    padding-top: 10px;
+    font-size: 1.5em;
+}
+
 .nav p {
     text-align: end;
     font-size: large;
@@ -101,7 +110,10 @@ button {
     box-shadow: 0px 2px 2px 0px;
 }
 
-.fa-money-bill-wave, .fa-child-reaching, .fa-heart, .fa-dog{
+.fa-money-bill-wave, 
+.fa-child-reaching, 
+.fa-heart, 
+.fa-dog{
     padding: 10px 10px 10px 10px;
     border-radius: 50px 50px 50px 50px;
     background-color: rgb(222, 247, 247);
