@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+li {
+    list-style-type: none;
+}
+
 /* Header Texte */
 .blocheadertext {
     margin: 2em 3em 0em 3em;
@@ -20,7 +24,6 @@ body {
 
 .headerlist li {
     display: inline;
-    list-style-type: none;
     font-size: 1.2em;
     padding-top: 2.3em;
     margin-right: 4em;
@@ -326,3 +329,26 @@ main {
 
 
 /*:::::::::::::::::::::::::::::::::Footer::::::::::::::::::::::::::::*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #d9d9d9;
+    margin-left: 3em;
+    margin-bottom: 3em;
+    width: 90%;
+}
+
+footer p{
+    margin-left: -10em;
+}
+
+footer p:nth-child(1){
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+
+footer div {
+    padding: 3em;
+}
