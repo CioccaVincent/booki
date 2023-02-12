@@ -243,12 +243,17 @@ main {
     margin-bottom: 0;
 }
 
+.stars {
+    margin-top: 3em;
+}
+.star {
+    margin-top: 2em;
+}
+
 .fa-chart-line {
-    display: flex;
-    justify-content: flex-end;
-    padding: 0px 20px 0px 0px;
     color: #0065FC;
-    font-size: 1.3em;
+    font-size: 1em;
+    padding-left: 38%;
 }
 
 .blockpopulaire figure {
@@ -276,10 +281,6 @@ main {
 
 .blockpopulaire figcaption {
     padding-left: 0.5em;
-}
-
-.blockpopulaire figcaption p {
-    font-family: 'raleway', sans-serif;
 }
 
 .blockpopulaire figcaption p:nth-child(1) {
@@ -355,4 +356,125 @@ footer p:nth-child(1){
 
 footer div {
     padding: 3em;
+}
+
+/*:::::::::::::::::::::::::::::::::@Media::::::::::::::::::::::::::::*/
+/*Tablet*/
+@media only screen and (max-width: 900px) {
+    .nav li {
+        margin-right: 0.5em;
+        padding: 0.5em 0.9em 0.3em 0.3em;
+        font-size: small;
+    }
+
+    .blockheberger {
+        width: 100%;
+    }
+
+    .blockpopulaire {
+        margin-top: 3em;
+        margin-left: 0em;
+        width: 100%;
+    }
+
+    .blockpopulaire figure {
+        width: 9.8em;
+        height: 8em;
+    }
+    
+    .blockpopulaire figure img {
+        width: 40%;
+    }
+
+    .blockpopulaire figcaption p {
+        font-size: 0.8em;
+    }
+
+    .fa-star,
+    .stargrey {
+        font-size: 0.7em;
+    }
+
+    .stars {
+        margin-top: 1.5em;
+    }
+    .star {
+        margin-top: 0.5em;
+    }
+
+    .fa-chart-line {
+        padding-left: 60%;
+    }
+
+    .blockactiviter figure {
+        height: 16em;
+    }
+
+    .blockactiviter figcaption p {
+        font-size: 0.8em;
+    }
+
+    footer p{
+        margin-left: 0em;
+    }
+}
+
+/*Smartfone*/
+@media only screen and (min-width: 770px) {
+    .nav li {
+        margin-right: 0.5em;
+        padding: 0.5em 0.9em 0.3em 0.3em;
+        font-size: small;
+    }
+
+    .blockheberger {
+        width: 100%;
+    }
+
+    .blockpopulaire {
+        margin-top: 3em;
+        margin-left: 0em;
+        width: 100%;
+    }
+
+    .blockpopulaire figure {
+        width: 9.8em;
+        height: 8em;
+    }
+    
+    .blockpopulaire figure img {
+        width: 40%;
+    }
+
+    .blockpopulaire figcaption p {
+        font-size: 0.8em;
+    }
+
+    .fa-star,
+    .stargrey {
+        font-size: 0.7em;
+    }
+
+    .stars {
+        margin-top: 1.5em;
+    }
+    .star {
+        margin-top: 0.5em;
+    }
+
+    .fa-chart-line {
+        padding-left: 60%;
+    }
+
+    .blockactiviter figure {
+        height: 16em;
+    }
+
+    .blockactiviter figcaption p {
+        font-size: 0.8em;
+    }
+
+    footer p{
+        margin-left: 0em;
+    }
 }
