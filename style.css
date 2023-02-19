@@ -67,7 +67,7 @@ li {
     font-size: 25px;
 }
 
-input{
+input {
     padding-left: 15px;
     border: none;
     border-top: 1px solid #F2F2F2;
@@ -77,12 +77,20 @@ input{
 
 button {
     text-align: center;
-    font-size: large;
     color: white;
     background-color:rgb(12, 133, 231);
     border: none;
     border-radius: 0px 15px 15px 0px;
-    padding: 15px 25px 15px 25px;
+    padding: 0px 20px 0px 20px;
+}
+
+button p {
+    font-size: large;
+    font-weight: 700;
+}
+
+button .fa-magnifying-glass { 
+    display: none;
 }
 
 /* NAVIGATION */
@@ -149,6 +157,11 @@ main {
     padding-top: 1em;
     display: flex;
     flex-wrap: wrap;
+}
+
+.contnair {
+    display: flex;
+    justify-content: space-around;
 }
 
 .cards1 {
@@ -330,7 +343,6 @@ main {
 .blockactiviter figcaption p {
     padding-left: 1em;
     padding-top: 0.3em;
-    font-family: 'raleway', sans-serif;
     font-weight: bold;
 }
 
@@ -420,61 +432,91 @@ footer div {
 }
 
 /*Smartfone*/
-@media only screen and (min-width: 770px) {
-    .nav li {
-        margin-right: 0.5em;
-        padding: 0.5em 0.9em 0.3em 0.3em;
-        font-size: small;
+ @media only screen and (max-width: 700px) {
+    .headertext {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .blockheberger {
-        width: 100%;
+    .booki {
+        margin-left: 50%;
+        margin-right: 50%;
     }
 
-    .blockpopulaire {
-        margin-top: 3em;
-        margin-left: 0em;
-        width: 100%;
+    .headerlist li{
+        padding-bottom: 1em;
+        border-bottom: solid #d9d9d9;
+    }
+
+    .headerlist li:hover {
+        color: #0065FC;
+        border-bottom: solid #0065FC;
+        border-top: none;
+    }
+
+    input {
+        padding-left: 40%;
+    }
+
+    button p {
+        display: none;
+    }
+
+    button .fa-magnifying-glass{
+        display: block;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contnair {
+        flex-direction: column-reverse;
+    }
+
+    h2 .fa-chart-line {
+        padding-left: 50%;
     }
 
     .blockpopulaire figure {
-        width: 9.8em;
+        width: 30em;
         height: 8em;
     }
-    
-    .blockpopulaire figure img {
-        width: 40%;
+
+   .blockpopulaire {
+        margin-bottom: 3em;
     }
 
-    .blockpopulaire figcaption p {
-        font-size: 0.8em;
+    .blockheberger figure {
+        width: 30em;
+        height: 12em;
     }
 
-    .fa-star,
-    .stargrey {
-        font-size: 0.7em;
-    }
-
-    .stars {
-        margin-top: 1.5em;
-    }
-    .star {
-        margin-top: 0.5em;
-    }
-
-    .fa-chart-line {
-        padding-left: 60%;
+    .cards2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0em -2.4em 5em -2.4em;
     }
 
     .blockactiviter figure {
-        height: 16em;
+        width: 100em;
+        height: 14em;
+    }
+
+    .blockactiviter figure img {
+        width: 100%;
+        height: 80%;
+        border-radius: 15px 15px 0px 0px;
     }
 
     .blockactiviter figcaption p {
+        font-size: 1.2em;
+        padding-top: 0em;
+    }
+    
+    footer p{
         font-size: 0.8em;
     }
-
-    footer p{
-        margin-left: 0em;
-    }
-}
+} 
